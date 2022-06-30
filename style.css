@@ -7,7 +7,8 @@ header{
     display: flex;
     flex-direction: column;
 }
-.button{
+.hire,
+.call{
     color: #FFF;
     background-color: #000;
     width: 100%;
@@ -30,18 +31,13 @@ a{
 
 }
 
-footer{
-    background-color: rgba(247,193,162,0.7);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-}
 
 .footer-list{
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
+    padding-right: 10px;
 }
 
 .footer-list li{
@@ -53,10 +49,92 @@ footer{
     padding: 0px 0px 0px 5px;
 }
 
-.navigation{
-    display: flex;
-}
-
 h2{
     margin-bottom: 0px;
+}
+footer{
+    background-color: rgba(247,193,162,0.7);
+    position:fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 0px 10px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+
+    .nav-list{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .navigation{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .hire{
+        width:70px;
+        height: 20px;
+        padding: 10px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text,
+    .call{
+        width:50%;
+    }
+
+    }
+
+    .dot{
+        border-radius: 50%;
+        background-color: rgba(247,136,167,0.6);
+        height: 150px;
+        width: 150px;
+        display: inline-block;
+        position: absolute;
+        top: 250px;
+        right:100px;
+    }
+
+    .dot-2{
+        border-radius: 50%;
+        background-color: rgba(247,193,162,0.7);
+        height:120px;
+        width: 120px;
+        display: inline-block;
+        position: absolute;
+        top: 350px;
+        right:70px;
+    }
+
+    .dot-3{
+        border-radius: 50%;
+        background-color: rgba(207,130,213,0.6);
+        height: 90px;
+        width:90px;
+        display: inline-block;
+        position: absolute;
+        top: 290px;
+        right: 50px;
+    }
+    
+    .final{
+        margin-top:200px;
+    }
+
+    
 }
